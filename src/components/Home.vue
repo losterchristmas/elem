@@ -7,18 +7,21 @@
     <div style="margin-top:3%;">
       <Home-icon :iconlist="iconlist"></Home-icon>
     </div>
+    <Home-bottom :page='0'></Home-bottom>
   </div>
 </template>
 <script>
 import HomeInput from "./Homes/homeInput";
 import HomeSwiper from "./Homes/homeSwiper";
 import HomeIcon from "./Homes/homeIcon";
+import HomeBottom from "./Common/CommonBotton";
 
 export default {
   components: {
     HomeSwiper,
     HomeInput,
-    HomeIcon
+    HomeIcon,
+    HomeBottom
   },
   name: "Home",
   data() {
