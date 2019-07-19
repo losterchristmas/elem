@@ -15,6 +15,7 @@ import HomeInput from "./Homes/homeInput";
 import HomeSwiper from "./Homes/homeSwiper";
 import HomeIcon from "./Homes/homeIcon";
 import HomeBottom from "./Common/CommonBotton";
+import axios from "axios";
 
 export default {
   components: {
@@ -114,6 +115,18 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    
+  },
+  methods:{
+    getInfo() {
+      axios.get("https://losterchristmas.github.io/travel/static/mock/index.json").then(this.getInfoSucc);
+    },
+    getInfoSucc(res){
+      console.log(res);
+      
+   }
   }
 };
 </script>
