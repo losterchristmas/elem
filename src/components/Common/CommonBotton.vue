@@ -46,7 +46,8 @@ export default {
   bottom: 0;
   border-top: 1px solid #c6c6c6;
   display: flex;
-
+  background #fff;
+  
   .bottom-list {
     width: 25%;
     text-align: center;
