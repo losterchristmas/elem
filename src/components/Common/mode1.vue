@@ -1,7 +1,8 @@
 <template>
   <div class="content">
     <p class="title">{{title}}</p>
-    <i :class="icon" style="float: right;color: #ff3b42;"></i>
+    <!-- <i :class="icon" style="float: right;color: #ff3b42;"></i> -->
+    <img :src="icon" class="iconStyle" alt="">
     <p class="des">{{des}}</p>
   </div>
 </template>
@@ -10,7 +11,7 @@ export default {
   props: {
     title: String,
     des: String,
-    icon: String
+    icon: String,
   },
   mounted() {
   }
@@ -24,13 +25,18 @@ export default {
   padding: 3%;
 
   .title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 8%;
   }
-
-  des {
-    font-size: 0.9rem;
+  .iconStyle{
+    width 1.8rem
+    height 1.8rem
+    float right
+    margin-top: -10%;
+  }
+  .des {
+    font-size: 0.8rem;
     color: #81807c;
     line-height: 1rem;
   }
